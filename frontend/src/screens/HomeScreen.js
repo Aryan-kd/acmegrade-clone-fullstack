@@ -6,7 +6,7 @@ import Rating from '../components/Rating'
 
 const HomeScreen = () => {
   return (
-    <Container fluid>
+    <Container>
       <h1 className='text-center my-3'>Your Courses</h1>
       <Row>
         <Col sm={10} md={6} lg={4} xl={3}>
@@ -25,7 +25,7 @@ const HomeScreen = () => {
               </Link>
               <Card.Body>
                 <Card.Title>
-                  Course: <strong>AI</strong>
+                  Course: <strong>Artificial Intelligence</strong>
                 </Card.Title>
               </Card.Body>
               <Rating value={4} />

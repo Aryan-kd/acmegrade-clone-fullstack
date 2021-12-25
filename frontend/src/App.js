@@ -7,6 +7,8 @@ import SideNavbar from './components/SideNavbar'
 import LiveScreen from './screens/LiveScreen'
 import MainScreen from './screens/MainScreen'
 import LeaderScreen from './screens/LeaderScreen'
+import ExploreScreen from './screens/ExploreScreen'
+import AchieveScreen from './screens/AchieveScreen'
 
 const App = () => {
   return (
@@ -14,20 +16,28 @@ const App = () => {
       <Header />
       <main className='d-flex'>
         <SideNavbar />
-        <Switch>
-          <Route path='/' exact>
-            <MainScreen />
-          </Route>
-          <Route path='/home'>
-            <HomeScreen />
-          </Route>
-          <Route path='/classroom'>
-            <LiveScreen />
-          </Route>
-          <Route path='/leaderboard'>
-            <LeaderScreen />
-          </Route>
-        </Switch>
+        <div className='mainscreen'>
+          <Switch>
+            <Route path='/' exact>
+              <MainScreen />
+            </Route>
+            <Route path='/home'>
+              <HomeScreen />
+            </Route>
+            <Route path='/classroom'>
+              <LiveScreen />
+            </Route>
+            <Route path='/leaderboard'>
+              <LeaderScreen />
+            </Route>
+            <Route path='/achieve'>
+              <AchieveScreen />
+            </Route>
+            <Route path='/course'>
+              <ExploreScreen />
+            </Route>
+          </Switch>
+        </div>
       </main>
       <Footer />
     </Router>

@@ -16,7 +16,7 @@ const ClassroomScreen = () => {
       <Table striped bordered hover size='sm'>
         <thead>
           <tr>
-            <th>Rank</th>
+            <th className='dark'>Rank</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Points</th>

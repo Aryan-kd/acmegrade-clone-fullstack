@@ -3,24 +3,25 @@
   width: 40px;
   margin-left: 40px;
 }
-
 main {
-  min-height: 80vh;
+  min-height: 77.9vh;
 }
 .imgcard {
   height: 200px;
 }
-
-.SideNavbar1 {
-  height: 80vh;
-  width: 100%;
-  text-align: center;
-}
-.SideNavbar2 {
-  width: 220px;
-}
-
 .malechild img {
   height: 50px;
   width: 50px;
+  margin: 0 10px;
+}
+
+.mainscreen {
+  background-color: rgb(175, 245, 245);
+  position: fixed;
+  height: 77.9vh;
+  width: 97%;
+  top: 1;
+  right: 0;
+  overflow: hidden;
+  overflow-y: scroll;
 }
